@@ -1,0 +1,59 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+#header {
+    width: 100%;
+    height: 220px;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+#header-section,
+#header-navigation {
+    display: flex;
+}
+
+#logo {
+    margin: 40px auto;
+}
+
+#nav-menu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+li.nav-item {
+    list-style: none;
+    font-family: 'Arial Black', 'Gadget', sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+
+  a.nav-link {
+    font-family: 'Arial Black', 'Gadget', sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+  }
+
+  a.nav-link:hover,
+  #active-page {
+    color: #0ba39c;
+  }
+
+  #beacon-section {
+    background-image: url(images/the-beacon.jpg);
+    height: 375px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  
