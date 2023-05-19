@@ -1,59 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: content-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+}
+
+body {
+  padding: 0px 0px 30px;
+}
+
+.site-section {
+  width: 100%;
 }
 
 #header {
-    width: 100%;
-    height: 220px;
-    /* display: flex; */
-    flex-wrap: wrap;
+  height: 220px;
+  flex-wrap: wrap;
 }
 
+.site-section,
 #header-section,
-#header-navigation {
-    display: flex;
+#header-navigation,
+#nav-menu {
+  display: flex;
 }
 
 #logo {
-    margin: 40px auto;
+  margin: 40px auto;
 }
 
 #nav-menu {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+li.nav-item,
+a.nav-link {
+  font-family: "Arial Black", "Gadget", sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
 }
 
 li.nav-item {
-    list-style: none;
-    font-family: 'Arial Black', 'Gadget', sans-serif;
-    font-size: 14px;
-    font-weight: bolder;
-  }
+  list-style: none;
+}
 
-  a.nav-link {
-    font-family: 'Arial Black', 'Gadget', sans-serif;
-    font-size: 14px;
-    font-weight: bolder;
-    text-decoration: none;
-    color: black;
-  }
+a.nav-link {
+  text-decoration: none;
+  color: black;
+}
 
-  a.nav-link:hover,
-  #active-page {
-    color: #0ba39c;
-  }
+a.nav-link:hover,
+#active-page {
+  color: #0ba39c;
+}
 
-  #beacon-section {
-    background-image: url(images/the-beacon.jpg);
-    height: 375px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-  }
+#beacon-section {
+  background-image: url(images/the-beacon.jpg);
+  height: 375px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  
+.beacon-article {
+  width: 450px;
+  height: 270px;
+  margin-left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.beacon-article,
+#beacon-h1 {
+font-size: 20px;
+}
+
+#beacon-h1,
+.beacon-p {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+#beacon-h1 {
+  background-color: white;
+  padding: 23px 27px 20px;
+  margin: 20px 0 18px;
+  font-family: 'Poller One', cursive;
+}
+
+.beacon-p {
+  background-color: #252525;
+  color: white;
+  margin: 7px auto;
+  padding: 12px 27px;
+  line-height: 1;
+}
+
+#read-more {
+  background-color: #0ba39c;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 64px;
+  margin: 15px 0 0;
+  font-size: 16px;
+}
+
+#gallery-section {
+  padding: 20px 0;
+
+}
+
+.gallery-container {
+  padding: 5px;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gallery-image {
+  width: 300px;
+  height: 242px;
+  border: 2px solid #252525;
+}
+
+figcaption {
+  padding: 25px 0 0;
+}
+
+.gallery-link {
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Poller One', cursive;
+  font-size: 20px;
+  color: black;
+}
+
+#site-footer {
+  background-color: #252525;
+  height: 122px;
+}
