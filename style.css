@@ -20,9 +20,9 @@ body {
 }
 
 .site-section,
+.nav-menu,
 #header-section,
-#header-navigation,
-#nav-menu {
+#header-navigation {
   display: flex;
 }
 
@@ -30,7 +30,7 @@ body {
   margin: 40px auto;
 }
 
-#nav-menu {
+.nav-menu {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -69,8 +69,11 @@ a.nav-link:hover,
   width: 450px;
   height: 270px;
   margin-left: 50%;
-  font-family: Arial, Helvetica, sans-serif;
+}
 
+.beacon-article,
+#footer-p {
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .beacon-article,
@@ -91,9 +94,14 @@ font-size: 20px;
   font-family: 'Poller One', cursive;
 }
 
+.beacon-p,
+#read-more,
+#footer-p {
+  color: white;
+}
+
 .beacon-p {
   background-color: #252525;
-  color: white;
   margin: 7px auto;
   padding: 12px 27px;
   line-height: 1;
@@ -101,7 +109,6 @@ font-size: 20px;
 
 #read-more {
   background-color: #0ba39c;
-  color: white;
   border: none;
   width: 150px;
   height: 64px;
@@ -142,4 +149,58 @@ figcaption {
 #site-footer {
   background-color: #252525;
   height: 122px;
+}
+
+#footer-banner {
+  margin: auto;
+  padding: 0 30px;
+  justify-content: space-between;
+}
+
+#footer-p {
+  margin: auto 0;
+  font-size: 14px;
+}
+
+#social-nav-menu {
+  gap: 20px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  text-indent: -9999px;
+}
+
+#twitter-link {
+  background-image: url(images/twitterdark.jpg);
+}
+
+#twitter-link:hover {
+  background-image: url(images/twitterlight.jpg);
+}
+
+#fb-link {
+  background-image: url(images/fbdark.jpg);
+}
+
+#fb-link:hover {
+  background-image: url(images/fblight.jpg);
+}
+
+#googplus-link {
+  background-image: url(images/googplusdark.jpg);
+}
+
+#googplus-link:hover {
+  background-image: url(images/googpluslight.jpg);
+}
+
+#pinterest-link {
+  background-image: url(images/pintdark.jpg);
+}
+
+#pinterest-link:hover {
+  background-image: url(images/pintlight.jpg);
 }
