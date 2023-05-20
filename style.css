@@ -77,23 +77,34 @@ a.nav-link:hover,
 font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   font-family: 'Poller One', cursive;
   text-align: center;
 }
 
+h1 {
+  background-color: #252525;
+  color: white;
+  margin: auto;
+  font-family: 'Poller One', cursive;
+  font-size: 35px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+
 .beacon-article,
-#beacon-h1 {
+#beacon-h2 {
 font-size: 20px;
 }
 
-#beacon-h1,
+#beacon-h2,
 .beacon-p {
   white-space: nowrap;
   display: inline-block;
 }
 
-#beacon-h1 {
+#beacon-h2 {
   background-color: white;
   padding: 23px 27px 20px;
   margin: 20px 0 18px;
@@ -122,19 +133,19 @@ font-size: 20px;
   font-size: 16px;
 }
 
-#gallery-section {
+#index-gallery-section {
   padding: 20px 0;
 
 }
 
-.gallery-container {
+.index-gallery-container {
   padding: 5px;
   margin: 0 auto;
   justify-content: space-around;
   align-items: center;
 }
 
-.gallery-image {
+.index-gallery-image {
   width: 300px;
   height: 242px;
   border: 2px solid #252525;
@@ -144,7 +155,7 @@ figcaption {
   padding: 25px 0 0;
 }
 
-.gallery-link {
+.index-gallery-link {
   text-decoration: none;
   text-align: center;
   font-family: 'Poller One', cursive;
@@ -214,16 +225,6 @@ figcaption {
 
 /* About page specific CSS */
 
-#about-h1 {
-  background-color: #252525;
-  color: white;
-  margin: auto;
-  font-family: 'Poller One', cursive;
-  font-size: 35px;
-  padding: 10px 30px;
-  margin-bottom: 20px;
-}
-
 #photographer {
   background-image: url(images/photographer.jpg);
   width: 616px;
@@ -250,3 +251,26 @@ figcaption {
 }
 
 /* Gallery page specific CSS */
+
+#gallery-section {
+  max-width: 980px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.gallery-container {
+  padding: 10px;
+  margin: auto;
+}
+
+.gallery-image {
+  height: 300px;
+  width: 299px;
+  border: 2px solid #252525;
+  opacity: 0.8;
+  transition: 0.5s ease-in-out;
+}
+
+a > img:hover {
+  opacity: 1;
+}
