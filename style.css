@@ -296,3 +296,53 @@ a > img:hover {
 .gsp-link:hover {
   color: gray;
 }
+
+/* Blog page specific CSS */
+
+#blog-h3 {
+  font-size: 25px;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  margin-top: 50px; 
+}
+
+.blog-section {
+  border: 2px solid #252525;
+  display: flex;
+  margin: 10px 40px;
+  flex-wrap: wrap;
+}
+
+.blog-section > a {
+  margin: 0 auto;
+}
+
+.blog-container {
+  background-image: url(images/cutting-mustache.jpg);
+  background-size: cover;
+  height: 295px;
+  width: 376px;
+}
+
+.blog-image {
+  border-right:  2px solid #252525;
+}
+
+.blog-copy {
+  margin: 20px auto;
+}
+
+.blog-link {
+  background-color: #252525;
+  color: white;
+  margin: auto;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  padding: 2px 25px;
+}
+
+.blog-link:hover {
+  background-color: white;
+  color: #252525;
+  border: 2px solid #252525;
+}
