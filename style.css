@@ -94,6 +94,11 @@ h1 {
   font-size: 35px;
 }
 
+main {
+  max-width: 960px;
+  margin: auto;
+}
+
 .beacon-article,
 #beacon-h2 {
   font-size: 20px;
@@ -229,7 +234,7 @@ figcaption {
   background-image: url(images/pintlight.jpg);
 }
 
-@media (max-width: 550px) {
+@media (max-width: 557px) {
   #footer-banner {
     flex-wrap: wrap;
   }
@@ -380,4 +385,21 @@ a > img:hover {
     border-right: none;
     border-bottom: 2px solid black;
   }
+}
+
+/* Blog Single Post page specfic CSS */
+
+#bsp-image {
+  margin: 5px auto;
+  width: 90%;
+  border: 2px solid black;
+}
+
+#bsp-h3 {
+  margin-top: 20px;
+}
+
+.bsp-copy {
+  width: 90%;
+  max-width: 560px;
 }
