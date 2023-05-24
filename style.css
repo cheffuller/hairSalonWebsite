@@ -59,17 +59,30 @@ a.nav-link:hover,
   color: #0ba39c;
 }
 
-#beacon-section {
+#the-beacon {
   background-image: url(images/the-beacon.jpg);
-  height: 375px;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: fit-content;
+  min-height: 370px;
+  padding-top: 30px;
 }
 
 .beacon-article {
   width: 450px;
-  height: 270px;
+  position: absolute;
   margin-left: 50%;
+}
+
+@media (max-width: 970px) {
+
+  .beacon-article{
+  position: absolute;
+  width: 100%; 
+  text-align: center;
+  margin: 0 auto;
+  }
 }
 
 .beacon-article,
@@ -106,7 +119,8 @@ main {
 }
 
 #beacon-h2,
-.beacon-p {
+.beacon-p,
+#read-more {
   white-space: nowrap;
   display: inline-block;
 }
@@ -114,7 +128,7 @@ main {
 #beacon-h2 {
   background-color: white;
   padding: 23px 27px 20px;
-  margin: 20px 0 18px;
+  margin: 7px 0 18px;
 }
 
 .beacon-p,
@@ -132,20 +146,25 @@ main {
 
 #read-more {
   background-color: #0ba39c;
-  border: none;
-  width: 150px;
-  height: 64px;
-  margin: 15px 0 0;
+  color: white;
+  margin: 7px auto;
+  text-decoration: none;
   font-size: 16px;
+  padding: 22px 27px;
+}
+
+a#read-more:hover {
+  background-color: #1fc3bc;
 }
 
 #index-gallery-section {
-  padding: 20px 0;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .index-gallery-container {
   padding: 5px;
-  margin: 0 auto;
+  margin: 20px auto;
   justify-content: space-around;
   align-items: center;
 }
