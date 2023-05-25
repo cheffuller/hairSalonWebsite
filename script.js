@@ -11,3 +11,11 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+// Scripts for contact page reults
+const placeForResults = document.getElementById("results")
+
+new URLSearchParams(window.location.search).forEach((value, name) => {
+  placeForResults.append(`${name} : ${value}`)
+  placeForResults.append(document.createElement("br"))
+})
