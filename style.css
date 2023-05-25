@@ -22,13 +22,21 @@ body {
 
 .site-section,
 .nav-menu,
-#header-section,
-#header-navigation {
+#header-section {
   display: flex;
 }
 
 #logo {
   margin: 40px auto;
+}
+
+.nav-bar {
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  width: 90%;
 }
 
 .nav-menu {
@@ -58,6 +66,78 @@ a.nav-link:hover,
 #active-page {
   color: #0ba39c;
 }
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* nav bar transition to hamburger menu */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    background-color: #0ba39c;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-bar {
+    /* position: fixed; */
+   
+    z-index: 1;
+
+    margin: 0 auto;
+  }
+
+  .nav-menu {
+    position: relative;
+    left: -100%;
+    top: 40px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+    opacity: 0.8;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+}
+
 
 #the-beacon {
   background-image: url(images/the-beacon.jpg);
@@ -121,7 +201,7 @@ main {
 #beacon-h2,
 .beacon-p,
 #read-more {
-  white-space: nowrap;
+  /* white-space: nowrap; */
   display: inline-block;
 }
 
