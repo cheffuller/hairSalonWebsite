@@ -10,14 +10,36 @@ body {
   padding: 0px 0px 30px;
 }
 
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 220px;
+  margin-bottom: 35px;
+}
+
+h1,
+h2,
+.index-gallery-link {
+  font-family: "Poller One", cursive;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+}
+
 .site-section {
   width: 100%;
 }
 
-#header {
-  height: 220px;
-  margin-bottom: 35px;
-}
+/* CSS for header section and navigation menu */
 
 #logo {
   margin: 40px auto;
@@ -48,9 +70,15 @@ body {
 }
 
 li.nav-item,
+a.nav-link,
+#footer-p,
+.about-p  {
+  font-size: 14px;
+}
+
+li.nav-item,
 a.nav-link {
   font-family: "Arial Black", "Gadget", sans-serif;
-  font-size: 14px;
   font-weight: bolder;
 }
 
@@ -59,8 +87,11 @@ li.social-nav-item {
   list-style: none;
 }
 
-a.nav-link {
-  text-decoration: none;
+a.nav-link,
+.index-gallery-link,
+.gsp-link,
+.contact-input::placeholder,
+#contact-submit:hover {
   color: black;
 }
 
@@ -82,6 +113,7 @@ a.nav-link:hover,
   background-color: white;
 }
 
+/* CSS for index page */
 #the-beacon {
   background-image: url(images/the-beacon.jpg);
   background-repeat: no-repeat;
@@ -127,21 +159,6 @@ a.nav-link:hover,
   margin-bottom: 20px;
 }
 
-h1,
-h2 {
-  font-family: "Poller One", cursive;
-}
-
-h1 {
-  font-size: 35px;
-  text-align: center;
-}
-
-main {
-  max-width: 960px;
-  margin: auto;
-}
-
 .beacon-article,
 #beacon-h2 {
   font-size: 20px;
@@ -177,7 +194,6 @@ main {
   background-color: #0ba39c;
   color: white;
   margin: 7px auto;
-  text-decoration: none;
   font-size: 16px;
   padding: 22px 27px;
 }
@@ -209,11 +225,8 @@ figcaption {
 }
 
 .index-gallery-link {
-  text-decoration: none;
   text-align: center;
-  font-family: "Poller One", cursive;
   font-size: 20px;
-  color: black;
 }
 
 .index-gallery-link > img,
@@ -248,7 +261,6 @@ a > figure:hover {
 
 #footer-p {
   margin: auto 0;
-  font-size: 14px;
 }
 
 #social-nav-menu {
@@ -332,7 +344,6 @@ a > figure:hover {
 }
 
 .about-p {
-  font-size: 14px;
   width: 90%;
   margin: 0 auto;
 }
@@ -380,10 +391,6 @@ a > img:hover {
   font-family: "Arial Black", Gadget, sans-serif;
   margin: 20px auto 30px auto;
   padding: 5px 20px;
-}
-
-.gsp-link {
-  color: black;
 }
 
 .gsp-link:hover {
@@ -496,10 +503,6 @@ a > img:hover {
   outline: none;
 }
 
-.contact-input::placeholder {
-  color: black;
-}
-
 #contact-message {
   height: 210px;
 }
@@ -515,7 +518,6 @@ a > img:hover {
 #contact-submit:hover {
   border: 2px solid #252525;
   background-color: white;
-  color: black;
   padding: 18px 30px;
 }
 
