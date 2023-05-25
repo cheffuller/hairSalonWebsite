@@ -12,28 +12,45 @@
       <section id="header-section" class="site-section">
         <a id="logo" href="index.html"> <img src="images/logo.jpg" /> </a>
       </section>
-      <nav id="header-navigation">
+      <section class="site-section">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </section>
+      <nav class="nav-bar">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">HOME</a>
+            <a class="nav-link" href="index.html">
+              <section class="nav-section">HOME</section>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
+            <a class="nav-link" href="about.html">
+              <section class="nav-section">ABOUT</section>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="gallery.html">GALLERY</a>
+            <a class="nav-link" href="gallery.html">
+              <section class="nav-section">GALLERY</section>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="active-page" href="blog.html">BLOG</a>
+            <a id="active-page" class="nav-link" href="blog.html">
+              <section class="nav-section">BLOG</section>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-link" href="contact.html">
+              <section class="nav-section">CONTACT</section>
+            </a>
           </li>
         </ul>
       </nav>
     </header>
     <section class="site-section">
-      <h1 class="black-banner-header">BLOG SINGLE POST</h1>
+      <h1 id="about-h1" class="black-banner-header">BLOG SINGLE POST</h1>
     </section>
     <main>
       <section class="site-section">
@@ -139,26 +156,23 @@
       <section id="footer-banner" class="site-section">
         <p id="footer-p">© 2023 by Mustacchio. All rights reserved.</p>
         <nav id="social-navigation">
-          <ul id="social-nav-menu" class="nav-menu">
-            <li class="nav-item">
+          <ul id="social-nav-menu">
+            <li class="social-nav-item">
               <a href="index.html" id="twitter-link" class="social-link">
                 twitter
               </a>
             </li>
-
-            <li class="nav-item">
+            <li class="social-nav-item">
               <a href="index.html" id="fb-link" class="social-link">
                 facebook
               </a>
             </li>
-
-            <li class="nav-item">
+            <li class="social-nav-item">
               <a href="index.html" id="googplus-link" class="social-link">
                 google plus
               </a>
             </li>
-
-            <li class="nav-item">
+            <li class="social-nav-item">
               <a href="index.html" id="pinterest-link" class="social-link">
                 pinterest
               </a>
@@ -167,5 +181,6 @@
         </nav>
       </section>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
